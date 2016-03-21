@@ -215,13 +215,14 @@
     <Content Include="Assets\Images\a6.jpg" />
     <Content Include="Assets\Images\a7.jpg" />
     <Content Include="Assets\Images\a8.jpg" />
-    <Content Include="Assets\Images\logo.png" />
+    <Content Include="Assets\Images\logo.ico" />
     <Content Include="Assets\theme\css\animate.min.css" />
     <Content Include="Assets\theme\css\app.css" />
     <Content Include="Assets\theme\css\bootstrap.min.css" />
     <Content Include="Assets\theme\css\font-awesome.min.css" />
     <Content Include="Assets\theme\css\font.css" />
     <Content Include="Assets\theme\css\material-design-icons.css" />
+    <Content Include="Assets\theme\css\style.css" />
     <Content Include="Assets\theme\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\theme\fonts\sanfrancisco\font.css" />
     <Content Include="Assets\theme\images\a0.jpg" />
@@ -337,6 +338,7 @@
     <Content Include="Views\Shared\_Scripts.cshtml" />
     <Content Include="Views\Shared\_Styles.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_EmptyLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
