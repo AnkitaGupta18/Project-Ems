@@ -23,10 +23,13 @@
         <div id="content" class="app-content box-shadow-z0" role="main">
             @Html.Partial("_PartialHeader")
             @Html.Partial("_PartialFooter")
-            <div ui-view="" class="app-body" id="view">
-                @RenderBody()
+            
+                <div ui-view="" class="app-body" id="view">
+                    <div class="padding">
+                        @RenderBody()
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
 @Html.Partial("_Scripts")
 @RenderSection("scripts", required: false)
