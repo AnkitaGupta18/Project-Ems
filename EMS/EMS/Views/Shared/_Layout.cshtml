@@ -10,11 +10,11 @@
     <!-- for ios 7 style, multi-resolution icon of 152x152 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-    <link rel="apple-touch-icon" href="~/Assets/Images/logo.png">
+    <link rel="apple-touch-icon" href="~/Assets/Images/logo.ico">
     <meta name="apple-mobile-web-app-title" content="Flatkit">
     <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" sizes="196x196" href="~/Assets/Images/logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="~/Assets/Images/logo.ico">
     @Html.Partial("_Styles")
 </head>
 <body class="pace-done">
@@ -23,10 +23,13 @@
         <div id="content" class="app-content box-shadow-z0" role="main">
             @Html.Partial("_PartialHeader")
             @Html.Partial("_PartialFooter")
-            <div ui-view="" class="app-body" id="view">
-                @RenderBody()
+            
+                <div ui-view="" class="app-body" id="view">
+                    <div class="padding">
+                        @RenderBody()
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
 @Html.Partial("_Scripts")
 @RenderSection("scripts", required: false)

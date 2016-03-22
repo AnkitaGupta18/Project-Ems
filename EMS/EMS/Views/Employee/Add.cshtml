@@ -19,13 +19,13 @@
                     @Html.DropDownListFor(x => x.EmployeeType, EnumHelper.GetSelectList(typeof (EmployeeType)), "Select Employee Type", new {@class = "form-control"})
                 </div>
             </div>
-            <div class="clearfix"></div>
+            @*<div class="clearfix"></div>
             <div class="col-md-4">
                 <div class="form-group">
                     @Html.LabelFor(x => x.ProjectId)
                     @Html.DropDownListFor(x => x.ProjectId, new SelectList(Model.ProjectList, "Key", "Value"), "Select Project", new {@class = "form-control"})
                 </div>
-            </div>
+            </div>*@
             <div class="clearfix"></div>
             <div class="col-md-4">
                 <div class="form-group">
