@@ -1980,14 +1980,14 @@ body {
         width: 100%;
         height: auto; }
   .folded.nav-expand {
-    -webkit-transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition: width 0.1s cubic-bezier(0.25, 0.8, 0.25, 1);
     transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow-x: hidden;
     overflow-y: auto;
-    position: absolute; }
+    position: inherit; }
     .folded.nav-expand:hover,
     .folded.nav-expand:hover .scroll,
     .folded.nav-expand:focus,
@@ -2834,6 +2834,12 @@ body {
 
 .white {
   background-color: #fff; }
+.sel {
+  background-color: #0cc2aa }
+.grey-add {
+    background-color: #f0f0f0
+}
+
 
 .dark-white {
   color: rgba(0, 0, 0, 0.87);
@@ -3526,7 +3532,7 @@ body {
   padding-bottom: 0.25rem !important; }
 
 .padding {
-  padding: 3.5rem 14.5rem; }
+  padding: 5.5rem 14.5rem; }
 
 .margin {
   margin-bottom: 1.5rem; }
@@ -5390,6 +5396,8 @@ textarea.md-input {
       box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
       -webkit-transition: all 0.2s;
       transition: all 0.2s; }
+    .container-add
+    {max-width:92.25rem}
 
 .animated {
   -webkit-animation-duration: 0.5s;
