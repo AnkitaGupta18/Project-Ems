@@ -3,9 +3,11 @@
 @{
     ViewBag.Title = "Add";
 }
+
 <div class="row">
-    @using (Html.BeginForm("Add", "Employee", FormMethod.Post)) {
-        <div class="col-md-12">
+    @using (Html.BeginForm("Add", "Employee", FormMethod.Post))
+    {
+        <div class="col-md-9">
             <div class="col-md-4">
                 <div class="form-group">
                     @Html.LabelFor(x => x.Name)
@@ -20,12 +22,12 @@
                 </div>
             </div>
             @*<div class="clearfix"></div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    @Html.LabelFor(x => x.ProjectId)
-                    @Html.DropDownListFor(x => x.ProjectId, new SelectList(Model.ProjectList, "Key", "Value"), "Select Project", new {@class = "form-control"})
-                </div>
-            </div>*@
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            @Html.LabelFor(x => x.ProjectId)
+                            @Html.DropDownListFor(x => x.ProjectId, new SelectList(Model.ProjectList, "Key", "Value"), "Select Project", new {@class = "form-control"})
+                        </div>
+                    </div>*@
             <div class="clearfix"></div>
             <div class="col-md-4">
                 <div class="form-group">
@@ -36,12 +38,14 @@
             <div class="clearfix"></div>
             <div class="col-md-4">
                 <div class="form-group">
-                    @Html.LabelFor(x=>x.Password)
-                    @Html.TextBoxFor(x=>x.Password)
+                    @Html.LabelFor(x => x.Password)
+                    @Html.TextBoxFor(x => x.Password)
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div><input type="submit" class="btn btn-primary" value="Save"/></div>
+            <div><input type="submit" class="btn btn-primary" value="Save"/>
+            </div>
         </div>
     }
 </div>
+
