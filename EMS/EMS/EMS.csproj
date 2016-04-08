@@ -200,6 +200,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\VisitorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -207,6 +208,7 @@
     <Compile Include="Models\EmployeeViewModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ProjectViewModels.cs" />
+    <Compile Include="Models\VisitorViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -244,13 +246,19 @@
     <Content Include="Assets\theme\js\config.js" />
     <Content Include="Assets\theme\js\config.lazyload.js" />
     <Content Include="Assets\theme\js\config.router.js" />
+    <Content Include="Assets\theme\js\es5-shim.min.js" />
+    <Content Include="Assets\theme\js\jotform.forms.js" />
+    <Content Include="Assets\theme\js\JotFormCustomWidget.min.js" />
     <Content Include="Assets\theme\js\jquery.js" />
     <Content Include="Assets\theme\js\jquery.storageapi.min.js" />
     <Content Include="Assets\theme\js\moment.js" />
     <Content Include="Assets\theme\js\pace.min.js" />
     <Content Include="Assets\theme\js\palette.js" />
+    <Content Include="Assets\theme\js\postMessage.js" />
+    <Content Include="Assets\theme\js\prototype.forms.js" />
     <Content Include="Assets\theme\js\routie.js" />
     <Content Include="Assets\theme\js\screenfull.min.js" />
+    <Content Include="Assets\theme\js\scripts.min.js" />
     <Content Include="Assets\theme\js\tether.min.js" />
     <Content Include="Assets\theme\js\ui-form.js" />
     <Content Include="Assets\theme\js\ui-include.js" />
@@ -261,6 +269,9 @@
     <Content Include="Assets\theme\js\ui-scroll-to.js" />
     <Content Include="Assets\theme\js\ui-toggle-class.js" />
     <Content Include="Assets\theme\js\underscore-min.js" />
+    <Content Include="Assets\theme\js\webfont.js" />
+    <Content Include="Assets\theme\js\WidgetsServer.js" />
+    <Content Include="Assets\theme\js\WidgetsServerBuilder.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -332,6 +343,7 @@
     <Content Include="Views\Project\Index.cshtml" />
     <Content Include="Views\Project\Add.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Visitor\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

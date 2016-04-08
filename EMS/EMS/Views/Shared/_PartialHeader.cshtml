@@ -1,6 +1,6 @@
 ﻿
 
-<div class="app-header grey-add box-shadow">
+<div class="app-header col-md-11 grey-add box-shadow" style="z-index: 1000; position:inherit">
     <div class="navbar">
 
         <!-- Open side - Naviation on mobile -->
@@ -9,7 +9,7 @@
         </a>
         <!-- / -->
         <!-- Page title - Bind to $state's title -->
-        <div class="navbar-item pull-left h5" ng-bind="$state.current.data.title" id="pageTitle"></div>
+        <div class="navbar-item pull-left h5" ng-bind="$state.current.data.title" id="pageTitle">@ViewBag.Title</div>
 
         <!-- navbar right -->
         <ul class="nav navbar-nav pull-right">

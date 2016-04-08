@@ -46,7 +46,11 @@ namespace EMS {
                      .Include("~/Assets/theme/js/ui-nav.js")
                      .Include("~/Assets/theme/js/ui-screenfull.js")
                      .Include("~/Assets/theme/js/ui-scroll-to.js")
-                     .Include("~/Assets/theme/js/ui-toggle-class.js"));
+                     .Include("~/Assets/theme/js/ui-toggle-class.js")
+                     .Include("~/Assets/theme/js/prototype.forms.js")
+                     .Include("~/Assets/theme/js/jotform.forms.js")
+                     .Include("~/Assets/theme/js/postMessage.js")
+                     .Include("~/Assets/theme/js/WidgetsServer.js"));
 
             bundles.Add(new StyleBundle("~/Assets/bundles/css/theme")
                 .Include("~/Assets/theme/css/app.css")

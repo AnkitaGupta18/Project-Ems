@@ -1,0 +1,102 @@
+﻿@using EMS.Domain
+@model EMS.Models.VisitorViewModels
+@{
+    ViewBag.Title = "Add";
+}
+
+<div class="row">
+
+    <div class="col-md-9">
+        <div class="col-md-6">
+            <div class="box">
+                <div class="box-header">
+                    <h2>Visitor Details</h2>
+                </div>
+                <div class="box-divider m-a-0"></div>
+                <div class="box-body">
+                    @using (Html.BeginForm("Add", "Visitor", FormMethod.Post))
+                    {
+                        <div class="form-group row">
+                            @Html.LabelFor(x => x.Name, new {@class = "col-sm-6 form-control-label"})
+                            <div class="col-sm-6">
+                                @Html.TextBoxFor(x => x.Name, new {@class = "form-control"})
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            @Html.LabelFor(x => x.CompanyName, new {@class = "col-sm-6 form-control-label"})
+                            <div class="col-sm-6">
+                                @Html.TextBoxFor(x => x.CompanyName, new {@class = "form-control"})
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            @Html.LabelFor(x => x.Address, new {@class = "col-sm-6 form-control-label"})
+                            <div class="col-sm-6">
+                                @Html.TextBoxFor(x => x.Address, new {@class = "form-control"})
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            @Html.LabelFor(x => x.City, new {@class = "col-sm-6 form-control-label"})
+                            <div class="col-sm-6">
+                                @Html.TextBoxFor(x => x.City, new {@class = "form-control"})
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            @Html.LabelFor(x => x.Country, new {@class = "col-sm-6 form-control-label"})
+                            <div class="col-sm-6">
+                                @Html.TextBoxFor(x => x.Country, new {@class = "form-control"})
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            @Html.LabelFor(x => x.ZipCode, new {@class = "col-sm-6 form-control-label"})
+                            <div class="col-sm-6">
+                                @Html.TextBoxFor(x => x.ZipCode, new {@class = "form-control"})
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            @Html.LabelFor(x => x.Email, new {@class = "col-sm-6 form-control-label"})
+                            <div class="col-sm-6">
+                                @Html.TextBoxFor(x => x.Email, new {@class = "form-control"})
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            @Html.LabelFor(x => x.Description, new {@class = "col-sm-6 form-control-label"})
+                            <div class="col-sm-6">
+                                @Html.TextAreaFor(x => x.Description, new {@class = "form-control"})
+                            </div>
+                        </div>
+                        <div id="id_5" data-type="control_widget" data-widget-slug="postal_code_search" class="form-line question-selected"
+                             style="cursor: move;">
+                            <div style="display: inline-block; width: 100%;"><label class="form-label form-label-left form-label-auto" id="label_5" for="input_5" style="z-index: 100; width: 150px;">Postal code search</label>
+                                <div class="form-input">
+                                    <div class="question-input">
+                                        <div style="width: 100%; text-align: Left;"><iframe onload="widgetFrameLoaded(5)" frameborder="0" scrolling="no" allowtransparency="true" data-type="iframe" class="custom-field-frame custom-field-frame-rendered" id="customFieldFrame_5" src="//data-widgets.jotform.io/postalCodeSearch/?qid=5&amp;ref=http%3A%2F%2Fwww.jotform.com" style="border: none; width: 466px; height: 33px;" data-width="450" data-height="150"></iframe>
+                                            <div class="widget-inputs-wrapper"><input id="input_5" class="form-hidden form-widget  " type="hidden" name="q5_postalCode" value=""><input id="widget_settings_5" class="form-hidden form-widget-settings" type="hidden" value="%5B%7B%22name%22%3A%22customCountries%22%2C%22value%22%3A%22All%22%7D%2C%7B%22name%22%3A%22countryText%22%2C%22value%22%3A%22Select%20Country%3A%22%7D%2C%7B%22name%22%3A%22codeText%22%2C%22value%22%3A%22Enter%20Postal%20Code%3A%22%7D%2C%7B%22name%22%3A%22cityText%22%2C%22value%22%3A%22Select%20City%3A%22%7D%2C%7B%22name%22%3A%22listText%22%2C%22value%22%3A%22Show%20Cities%20List%22%7D%5D" data-version="2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-container"><img id="customFieldWizardImg_5" src="images/blank.gif" class="form-wandbutton context-menu-wand" title="Wizard"><img src="images/condition.png" class="form-condbutton" title="Conditions" alt="Conds" style="display: none;"><img src="https://www.jotform.com/images/gear.png" class="form-propbutton" title="Properties" alt="Props"><img src="http://max.jotfor.ms/images/blank.gif" class="form-delbutton index-cross" title="Delete" alt="X">
+                            </div>
+                        </div>
+                        <div class="form-group row m-t-md">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn white">Submit</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+@*<script src="http://cdn.jotfor.ms/static/encryptedForms.8caafd.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://cdn.jotfor.ms//js/encryption_wizard.js?3.3.12201" charset="utf-8"></script>
+<script type="text/javascript" src="http://cdn.jotfor.ms//js/jsondiffpatch/jsondiffpatch-full.min.js?3.3.12201"></script>*@
+<!--[if gt IE 8]><!-->
+@*<script src="http://cdn.jotfor.ms//js/react-0.14.3.min.js"></script>
+<script src="http://cdn.jotfor.ms//js/react-dom-0.14.3.min.js"></script>
+<link href="//cdn.jotfor.ms/static/formCss.css?3.3.12201" rel="stylesheet" type="text/css" />*@
+@*<link type="text/css" rel="stylesheet" href="//cdn.jotfor.ms/css/styles/nova.css?3.3.12201" />
+<link type="text/css" media="print" rel="stylesheet" href="//cdn.jotfor.ms/css/printForm.css?3.3.12201" />*@
